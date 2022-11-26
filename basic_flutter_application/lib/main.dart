@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Contoh Date Picker',
-      home: ImageTransformSample(),
+      home: ColumnWidgetSample(),
     );
   }
 }
@@ -156,7 +156,8 @@ class ImageTransformSample extends StatelessWidget {
             decoration: BoxDecoration(
               color: const Color(0xff7c94b6),
               image: const DecorationImage(
-                image: NetworkImage('https://images.unsplash.com/photo-1555677284-6a6f971638e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
+                image: NetworkImage(
+                    'https://images.unsplash.com/photo-1555677284-6a6f971638e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
                 fit: BoxFit.fitHeight,
               ),
               border: Border.all(
@@ -167,6 +168,40 @@ class ImageTransformSample extends StatelessWidget {
             height: 200,
             width: 300,
             margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 30),
+          )),
+    );
+  }
+}
+
+class ColumnWidgetSample extends StatelessWidget {
+  const ColumnWidgetSample({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(title: const Text("Contoh Column Widget")),
+          body: Column(
+            children: [
+              Container(
+                color: Colors.purpleAccent,
+                child: const FlutterLogo(
+                  size: 90.0,
+                ),
+              ),
+              Container(
+                color: Colors.greenAccent,
+                child: const FlutterLogo(
+                  size: 90.0,
+                ),
+              ),
+              Container(
+                color: Colors.orangeAccent,
+                child: const FlutterLogo(
+                  size: 90.0,
+                ),
+              )
+            ],
           )),
     );
   }
