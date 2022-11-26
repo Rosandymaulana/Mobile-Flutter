@@ -12,18 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Container(
-      margin: const EdgeInsets.only(top: 30),
-      color: Colors.white,
-      child: Column(children: <Widget>[
-        AppBar(title: const Text('Contoh Cupertino')),
-        CupertinoButton(
-          child: const Text("Contoh button"),
-          onPressed: () {},
-        ),
-        const CupertinoActivityIndicator(),
-      ]),
-    ));
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+      ),
+      home: const MyHomePage(title: 'My Increment App'),
+    );
   }
 }
 
