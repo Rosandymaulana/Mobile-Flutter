@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'dart:async';
 
 void main() {
   runApp(const MyApp());
@@ -12,16 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text("Contoh TextField")),
-        body: const TextField(
-          obscureText: false,
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: 'Nama',
-          ),
-        ),
-      ),
+      title: 'Contoh Date Picker',
+      home: MyHomePage(title: 'Contoh Date Picker'),
     );
   }
 }
@@ -83,10 +76,28 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // Variable/State untuk mengambil tanggal
+  DateTime selectedDate = DateTime.now();
+
+  // Initial SelectDate FLutter
+  Future<void> _selectDate(BuildContext context) async {
+    // Initial DateTime FIinal Picked
+    final DateTime? picked = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(2015, 8),
+        lastDate: DateTime(2101));
+    if (picked != null && picked != selectedDate) {
+      setState(() {
+        selectedDate = picked;
+      });
+    }
+  }
+
   int _counter = 0;
 
   void _incrementCounter() {
@@ -138,9 +149,21 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '"${selectedDate.toLocal()}'.split('')[0],
               style: Theme.of(context).textTheme.headline4,
             ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            ElevatedButton(
+                onPressed: () => {
+                      _selectDate(context),
+                      // ignore: avoid_print
+                      print(selectedDate.day +
+                          selectedDate.month +
+                          selectedDate.year)
+                    },
+                child: const Text('Pilih Tanggal'))
           ],
         ),
       ),
