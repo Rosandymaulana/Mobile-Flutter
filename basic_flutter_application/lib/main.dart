@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Contoh Date Picker',
-      home: ColumnWidgetSample(),
+      home: StackWidgetSample(),
     );
   }
 }
@@ -181,7 +181,7 @@ class ColumnWidgetSample extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(title: const Text("Contoh Column Widget")),
-          body: Column(
+          body: Row(
             children: [
               Container(
                 color: Colors.purpleAccent,
@@ -200,6 +200,46 @@ class ColumnWidgetSample extends StatelessWidget {
                 child: const FlutterLogo(
                   size: 90.0,
                 ),
+              )
+            ],
+          )),
+    );
+  }
+}
+
+class StackWidgetSample extends StatelessWidget {
+  const StackWidgetSample({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: const Text("Contoh Stack Widget"),
+          ),
+          body: Stack(
+            children: [
+              Container(
+                color: Colors.green,
+                alignment: Alignment.bottomCenter,
+                child: const Text("Satu",
+                    style: TextStyle(fontSize: 30, color: Colors.white)),
+              ),
+              Container(
+                color: Colors.red,
+                alignment: Alignment.bottomCenter,
+                child: const Text("Dua",
+                    style: TextStyle(fontSize: 30, color: Colors.white)),
+                height: 400.0,
+                width: 300.0,
+              ),
+              Container(
+                color: Colors.deepPurple,
+                alignment: Alignment.bottomCenter,
+                child: const Text("Tiga",
+                    style: TextStyle(fontSize: 30, color: Colors.white)),
+                height: 200.0,
+                width: 200.0,
               )
             ],
           )),
