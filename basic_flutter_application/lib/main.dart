@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:async';
+import 'tugas.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Contoh Date Picker',
-      home: GridViewSample(),
+      home: const MyTugas(),
     );
   }
 }

@@ -1,16 +1,158 @@
 # basic_flutter_application
 
-A new Flutter project.
+<h3> Nama : Maulana Rosandy </h3>
+<h3> NIM : 2041720120 </h3>
 
-## Getting Started
+<center><h3> Build in Widget </h3></center>
+<table>
+  <tr>
+    <th>Text Widget</th>
+    <th>Image Widget</th>
+    <th>Material Design dan iOS Cupertino </th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/text-widget.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/Images-Widget.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/cupertino.jpg" height="400px">
+    </td>
+  </tr>
 
-This project is a starting point for a Flutter application.
+  <tr>
+    <th>Button</th>
+    <th>Scaffold</th>
+    <th>Dialog</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/button.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/scaffold.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/dialog.jpg" height="400px">
+    </td>
+  </tr>
 
-A few resources to get you started if this is your first Flutter project:
+  <tr>
+    <th>Input dan Selection Widget </th>
+    <th>Date and Time Pickers </th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/input-selection.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/date-time.jpg" height="400px">
+    </td>
+  </tr>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+</table>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<center><h3> Layout Widget </h3></center>
+<table>
+    <p>Container</p>
+  <tr>
+    <th>property child</th>
+    <th>property alignment</th>
+    <th>property color</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/child.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/properti-alignment.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/properti-color.jpg" height="400px">
+    </td>
+  </tr>
+
+  <tr>
+    <th>Property height dan width</th>
+    <th>property margin</th>
+    <th>property padding</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/properti-height-width.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/properti-margin.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/properti-padding.jpg" height="400px">
+    </td>
+  </tr>
+
+  <tr>
+    <th>property transform</th>
+    <th>property decoration</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/properti-transform.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/properti-decoration.jpg" height="400px">
+    </td>
+  </tr>
+
+</table>
+
+<center><h3> Row dan Column </h3></center>
+<table>
+  <tr>
+    <th>Column Widget</th>
+    <th>Row Widget</th>
+    <th>Stack</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/column-widget.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/row-widget.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/stack.jpg" height="400px">
+    </td>
+  </tr>
+
+  <tr>
+    <th>ListView</th>
+    <th>GridView </th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/listview.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/gridview.jpg" height="400px">
+    </td>
+  </tr>
+
+</table>
+
+<center><h3> Jobsheet </h3></center>
+<table>
+  <tr>
+    <th>Screenshot 1</th>
+    <th>Screenshot 2</th>
+  </tr>
+  <tr>
+    <td>
+        <img src="images/tugas1.jpg" height="400px">
+    </td>
+    <td>
+        <img src="images/tugas2.jpg" height="400px">
+    </td>
+  </tr>
+
+</table>
