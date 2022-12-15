@@ -1,51 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Result extends StatelessWidget {
   const Result({
     Key? key,
-    required this.kelvin,
-    required this.reamor,
+    required this.result,
   }) : super(key: key);
 
-  final double kelvin;
-  final double reamor;
+  final double result;
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Row(
+    return Container(
+      margin: EdgeInsets.only(top: 20, bottom: 20),
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Suhu dalam Kelvin',
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                '$kelvin',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ],
+          Text(
+            "Hasil",
+            style: TextStyle(fontSize: 20),
           ),
-          const SizedBox(
-            width: 50,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Suhu dalam Reamor',
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                '$reamor',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
-            ],
+          Text(
+            result.toStringAsFixed(1),
+            style: TextStyle(fontSize: 30),
           )
         ],
       ),
